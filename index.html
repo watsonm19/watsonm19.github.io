@@ -4,18 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mark Watson's Portfolio</title>
-  <!-- Bootstrap 4 CDN -->
+  <!-- Bootstrap 4 CDN / HOSTED -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ab8cfa39d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <main>
-    <h1>Hi, my name is Mark Watson</h1>
-    <h2>I'm a Web Developer</h2>
-  </main>
 
-  <!-- Bootstrap JS Files -->
+  <section id="welcome">
+    <div id="cli" class="container p-5">
+      <h1>markwatsonjr@portfolio ~ % <span id="intro"></span><span class="type-block"><</span></h1>
+      <h1 id="type2" class="pt-1 hide">markwatsonjr@portfolio ~ % <span id="title"></span><span class="type-block"><</span></h1>
+      <h1 id="type3" class="pt-1 hide">markwatsonjr@portfolio ~ % <span id="open-this"></span><span class="type-block"><</span></h1>
+      <h1 id="type4" class="hide pt-2">Loading<span id="loading"></span></h1>
+    </div>
+    <span id="view-work">view my work</span>
+    <a href="#projects"><span id="down">&#8595;</span></a>
+  </section>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="mr-4 nav-item active">
+          <a class="nav-link" href="#welcome">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="mr-4 nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="mr-4 nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="mr-4 nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="about" class="pt-5">
+    <h2 class="text-center mb-5">ABOUT</h2>
+    <div class="container-fluid pt-5">
+      <div class="row justify-content-center">
+        <figure class="col text-center">
+          <img id="profile-img" src="imgs/mjw-profile-min.jpg" alt="">
+        </figure>
+        <div id="card-container" class="col">
+          <div class="card" style="width: 35rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"> Quisque nisl ex, feugiat quis odio eget, semper mollis diam. Morbi ac dignissim lorem, vitae faucibus nunc. Fusce erat urna, consequat non consequat ut, pulvinar quis ligula. In luctus dictum nisl, at finibus felis. Morbi scelerisque leo augue, cursus facilisis augue fermentum sed. Nam eu tortor sed diam tincidunt rhoncus. Nunc eget scelerisque justo, pulvinar mattis nibh. Nulla posuere neque et nibh mollis lobortis. Curabitur tincidunt mollis elit, ac sagittis lacus pretium sit amet. Nulla dapibus, justo in pretium tristique, eros sapien commodo sem.</p>
+              <p>Donec vitae molestie arcu. Donec maximus lorem ac lacus sagittis convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eget pulvinar mi. Donec non ornare velit, eget egestas neque. Pellentesque mattis accumsan diam, eu eleifend erat efficitur sit amet. Quisque non nisl id urna euismod lobortis ut id urna. Aenean blandit risus sit amet tortor sagittis rhoncus. Quisque a viverra arcu, at pretium purus. Aliquam euismod facilisis cursus. Etiam id rhoncus odio. Suspendisse potenti. Quisque id erat justo. Integer porta fermentum tincidunt.</p>
+              <span>View my <a href="#" class="card-link">resume</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center">education</h3>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Portland Community College</h5>
+              <p class="card-text">Portland, OR</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Graduated: Spring 2019</li>
+              <li class="list-group-item">Associate of Science, GPA: 3.72</li>
+            </ul>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Bellevue University</h5>
+              <p class="card-text">Bellevue, NE</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2020 - Present</li>
+              <li class="list-group-item">B.S. Web Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h3 class="text-center">skills</h3>
+          <div class="container">
+            <div class="row justify-content-center">
+              <ul class="skills list-style-none">
+                <li><span class="badge badge-dark">HTML</span></li>
+                <li><span class="badge badge-dark">CSS</span></li>
+                <li><span class="badge badge-dark">Javascript</span></li>
+                <li><span class="badge badge-dark">Bootstrap</span></li>
+                <li><span class="badge badge-dark">jQuery</span></li>
+              </ul>
+              <ul class="skills list-style-none">
+                <li><span class="badge badge-dark">Node.js</span></li>
+                <li><span class="badge badge-dark">Express</span></li>
+                <li><span class="badge badge-dark">React</span></li>
+                <li><span class="badge badge-dark">MongoDB</span></li>
+                <li><span class="badge badge-dark">MySQL</span></li>
+              </ul>
+              <ul class="skills list-style-none">
+                <li><span class="badge badge-dark">EJS</span></li>
+                <li><span class="badge badge-dark">JSX</span></li>
+                <li><span class="badge badge-dark">Git</span></li>
+                <li><span class="badge badge-dark">GitHub</span></li>
+                <li><span class="badge badge-dark">Heroku</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>PROJECTS</h2>
+
+  </section>
+
+  <!-- HOSTED -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- LOCAL -->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
