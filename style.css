@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   scroll-behavior: smooth;
 }
 
+/* HOME SECTION */
 #welcome {
   height: 100vh;
   width: 100%;
@@ -36,12 +38,8 @@
   visibility: hidden;
 }
 
-#type4 {
+#loading {
   color: lightgreen;
-}
-
-#profile-img {
-  border-radius: 50%;
 }
 
 #view-work {
@@ -72,7 +70,12 @@
   border-radius: 50px;
 }
 
-.card{
+/* ABOUT SECTION */
+#profile-img {
+  border-radius: 50%;
+}
+
+.card {
   margin: auto;
 }
 
@@ -91,6 +94,7 @@ img {
   box-shadow: -1px 2px 10px -2px #000000;
 }
 
+/* PROJECTS SECTION */
 #projects h2 {
   color: #F8F7F9;
 }
@@ -106,6 +110,7 @@ img {
   top: 50%;
 }
 
+/* RESPONSIVE MEDIA QUERIES */
 @media screen and (min-width: 1400px) {
   img {
     width: 400px;
