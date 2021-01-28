@@ -91,6 +91,21 @@ img {
   box-shadow: -1px 2px 10px -2px #000000;
 }
 
+#projects h2 {
+  color: #F8F7F9;
+}
+
+.carousel {
+  margin-top: 50px;
+}
+.carousel-inner {
+  height: 600px;
+}
+.carousel-caption {
+  color: #F8F7F9;
+  top: 50%;
+}
+
 @media screen and (min-width: 1400px) {
   img {
     width: 400px;

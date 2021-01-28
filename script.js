@@ -9,9 +9,9 @@ const loading = '...'
 const speed = 80;
 const typeBlock = document.querySelectorAll('.type-block');
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
 
 function typeIntro() {
   if (i < intro.length) {
