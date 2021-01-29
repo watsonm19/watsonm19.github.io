@@ -16,6 +16,29 @@
   font-family: "Menlo", monospace, serif;
 }
 
+#toggle-colors {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+#toggle-colors:hover {
+  cursor: pointer;
+  color: lightgreen;
+}
+
+#theme-credit {
+  color: gray;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  font-size: 10px;
+}
+
+#creator, #theme-name {
+  font-size: 10px;
+}
+
 #cli {
   background: #0F111A;
   border-radius: 10px;
@@ -60,14 +83,13 @@
   position: absolute;
   left: 50%;
   padding: 5px;
+  border-radius: 50px;
   font-size: 2.5em;
 }
 
 #down:hover {
   color: lightgreen;
-  background: #0F111A;
   cursor: pointer;
-  border-radius: 50px;
 }
 
 /* ABOUT SECTION */
@@ -95,6 +117,10 @@ img {
 }
 
 /* PROJECTS SECTION */
+#projects {
+  background: #090B10;
+}
+
 #projects h2 {
   color: #F8F7F9;
 }

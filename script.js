@@ -1,6 +1,6 @@
 /*
 ===============================================
-; Title: Mark Watson's Portfolio script
+; Title: Mark Watson's Portfolio Script
 ; Author: Mark Watson
 ; Date: 25 January 2021
 ; Description: This program creates a scripted CLI-like typing effect on Mark's Portfolio page.
