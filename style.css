@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+#about h2, #about h3, #projects h2, #contact h2 {
+  text-decoration: underline;
+}
+
 /* HOME SECTION */
 #welcome {
   height: 100vh;
@@ -97,7 +101,7 @@
 /* ABOUT SECTION */
 #profile-img {
   border-radius: 50%;
-  /* display: inline-block; */
+  width: 350px;
   margin: auto;
   -webkit-box-shadow: -1px 2px 10px -2px #000000;
   box-shadow: -1px 2px 10px -2px #000000;
@@ -148,7 +152,20 @@
   }
   #view-work {
     font-size: 14px;
+    top: 87vh;
     left: 49.9%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  #profile-img {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  #skills {
+    margin-top: 30px;
   }
 }
 
@@ -163,12 +180,13 @@
 
   #view-work {
     font-size: 10px;
+    top: 88vh;
     left: 49.7%;
   }
 }
 
-@media screen and (min-width: 1400px) {
-  img {
+@media screen and (min-width: 1000px) {
+  #profile-img {
     width: 400px;
   }
 }

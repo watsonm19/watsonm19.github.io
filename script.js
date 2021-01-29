@@ -153,10 +153,28 @@ function hideBlock3() {
 /**
 * Params: n/a
 * Response: adds .hide CSS class
+* Description: hides "typing-block" on page
+*/
+function showBlock3() {
+  typeBlock[2].classList.remove("hide");
+}
+
+/**
+* Params: n/a
+* Response: adds .hide CSS class
 * Description: hides "loading" element on page
 */
 function hideLoading() {
   document.getElementById('loading').classList.add("hide");
+}
+
+/**
+* Params: n/a
+* Response: change element text to empty string
+* Description: hides "open-this" element on page
+*/
+function hideOpenText() {
+  document.getElementById('open-this').innerHTML = '';
 }
 
 /**
@@ -185,6 +203,8 @@ setTimeout(showLoading, 8500);
 setTimeout(loading, 9000);
 setTimeout(hideLoading, 10750);
 setTimeout(openAbout, 11000);
+setTimeout(hideOpenText, 11250);
+setTimeout(showBlock3, 11250);
 
 
 // end script
