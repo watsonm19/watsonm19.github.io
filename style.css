@@ -117,7 +117,7 @@
 
 .skills li {
   font-size: 30px;
-  margin: 20px;
+  margin: 40px;
 }
 
 /* PROJECTS SECTION */
@@ -155,6 +155,9 @@
     top: 87vh;
     left: 49.9%;
   }
+  .skills li {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 845px) {
@@ -164,7 +167,7 @@
 }
 
 @media screen and (max-width: 582px) {
-  #skills {
+  #skills-section {
     margin-top: 30px;
   }
 }
@@ -182,6 +185,9 @@
     font-size: 10px;
     top: 88vh;
     left: 49.7%;
+  }
+  .skills li {
+    font-size: 15px;
   }
 }
 
