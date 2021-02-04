@@ -221,6 +221,18 @@ h2, h3, h4, h5, h6 {
 
 /* RESPONSIVE MEDIA QUERIES */
 
+@media screen and (max-width: 1350px) {
+  .skills li {
+    font-size: 18px;
+    margin: 50px;
+  }
+
+  #about-me-text p {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #welcome h1 {
     font-size: 22px;
@@ -229,17 +241,11 @@ h2, h3, h4, h5, h6 {
   #welcome h1 span {
     font-size: 22px;
   }
+
   #view-work {
     font-size: 14px;
     top: 86vh;
     left: 49.9%;
-  }
-  .skills li {
-    font-size: 18px;
-  }
-  #about-me-text p {
-    line-height: 1.5;
-    font-size: 14px;
   }
 }
 
@@ -247,9 +253,13 @@ h2, h3, h4, h5, h6 {
   #profile-img {
     margin-bottom: 50px;
   }
+
+  .skills li {
+    margin: 20px;
+  }
 }
 
-@media screen and (max-width: 619px) {
+@media screen and (max-width: 579px) {
   #skills-section {
     margin-top: 30px;
   }
@@ -269,8 +279,9 @@ h2, h3, h4, h5, h6 {
     top: 87vh;
     left: 49.7%;
   }
+
   .skills li {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
