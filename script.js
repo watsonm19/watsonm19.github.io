@@ -12,7 +12,7 @@ const intro = `Hi, my name is Mark Watson`;
 const title = `I'm a Web Developer`;
 const openThis = 'open section/about.html';
 const load = '...'
-const changeThemeText = 'Click here to swap themes!'
+const swapThemeText = 'Click here to swap themes!'
 
 // variables - letter retrievers for above variables
 let i = 0;
@@ -25,12 +25,6 @@ let c = 0;
 const speed = 80;
 // variable - selector for all elements with type-block class
 const typeBlock = document.querySelectorAll('.type-block');
-
-
-// always go to the top on load
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
 
 // FUNCTION DECLARATIONS
 
@@ -103,14 +97,14 @@ function loading() {
 * Response: removes .hide CSS class
 * Description: makes element appear on page
 */
-function typeThemeText() {
-  if (c < changeThemeText.length) {
-    document.getElementById('change-theme-text').innerHTML += changeThemeText.charAt(c);
+function typeSwapTheme() {
+  if (c < swapThemeText.length) {
+    document.getElementById('swap-theme-text').innerHTML += swapThemeText.charAt(c);
     c++;
-    setTimeout(typeThemeText, speed);
+    setTimeout(typeSwapTheme, speed);
   }
   else {
-    document.getElementById('change-theme-text').innerHTML = changeThemeText;
+    document.getElementById('swap-theme-text').innerHTML = swapThemeText;
   }
 }
 
@@ -225,7 +219,7 @@ setTimeout(hideLoading, 10750);
 setTimeout(openAbout, 11000);
 setTimeout(hideOpenText, 11250);
 setTimeout(showBlock3, 11250);
-setTimeout(typeThemeText, 13000);
+setTimeout(typeSwapTheme, 13000);
 
 
 // end script

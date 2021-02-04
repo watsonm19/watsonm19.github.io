@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 30px;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -18,13 +22,13 @@ h2, h3, h4, h5 {
   text-decoration: underline;
 }
 
-/* Nav */
+/* NAV */
 .navbar {
   background: #0F111A;
   font-weight: 600;
 }
 
-/* HOME SECTION */
+/* WELCOME SECTION */
 #welcome {
   height: 100vh;
   width: 100%;
@@ -200,6 +204,8 @@ h2, h3, h4, h5 {
 .img-cred span, .img-cred a {
   font-size: 10px;
 }
+
+
 
 /* RESPONSIVE MEDIA QUERIES */
 

@@ -22,7 +22,7 @@ const projects = document.getElementById('projects');
 const overlay = document.querySelectorAll('.overlay')
 const toggleColors = document.querySelectorAll('.toggle-colors');
 
-// array of colors with name and creditor
+// array of object colors with name and creditor
 const bgColors = [
   {
     hex: '#090B10',
