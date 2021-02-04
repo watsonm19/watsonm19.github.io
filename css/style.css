@@ -283,6 +283,10 @@ h2, h3, h4, h5, h6 {
   .skills li {
     font-size: 14px;
   }
+
+  figure #profile-img {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
