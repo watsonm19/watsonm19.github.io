@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
+  background: ghostwhite;
 }
 
 h2, h3, h4, h5 {
@@ -25,7 +26,16 @@ h2, h3, h4, h5 {
 /* NAV */
 .navbar {
   background: #0F111A;
+}
+
+.nav-link {
+  color: #D3D3D3;
   font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #F8F7F9;
+  font-weight: 700;
 }
 
 /* WELCOME SECTION */
@@ -132,6 +142,8 @@ h2, h3, h4, h5 {
 
 .card {
   margin: auto;
+  -webkit-box-shadow: -1px 2px 5px -2px #000000;
+  box-shadow: -1px 2px 5px -2px #000000;
 }
 
 .list-style-none{
