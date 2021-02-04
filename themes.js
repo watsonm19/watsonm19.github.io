@@ -15,10 +15,12 @@
 const welcome = document.getElementById('welcome');
 const cli = document.getElementById('cli');
 const badges = document.querySelectorAll('.badge-dark');
-const projects = document.getElementById('projects');
 const creator = document.getElementById('creator');
 const theme = document.getElementById('theme-name');
-const button = document.getElementById('toggle-colors');
+const navbar = document.querySelector('.navbar');
+const projects = document.getElementById('projects');
+const overlay = document.querySelectorAll('.overlay')
+const toggleColors = document.querySelectorAll('.toggle-colors');
 
 // array of colors with name and creditor
 const bgColors = [
@@ -54,7 +56,7 @@ const bgColors = [
   }
 ]
 
-// theme picker variable
+// theme picker variable - refers to array index
 let index = 1;
 
 /**
@@ -67,23 +69,29 @@ function changeBg() {
   if (index > 4) {
     index = 0;
   }
-  // change backgroundColor of these elements
+  // change background color of these elements
   welcome.style.backgroundColor = bgColors[index].hex;
   cli.style.backgroundColor = bgColors[index].altHex;
   projects.style.backgroundColor = bgColors[index].hex;
-  // selects and changes all badges background-colors
-  for (b = 0; b < badges.length; b++) {
-    badges[b].style.backgroundColor = bgColors[index].altHex;
-  }
+  navbar.style.backgroundColor = bgColors[index].altHex;
   // changes text on page to give credit for the current theme
   creator.innerText = bgColors[index].inspiredBy;
   theme.innerText = bgColors[index].name
+  // selects and changes all badges background colors
+  for (b = 0; b < badges.length; b++) {
+    badges[b].style.backgroundColor = bgColors[index].altHex;
+  }
+  // selects and changes all overlay background colors
+  for (ol = 0; ol < overlay.length; ol++) {
+    overlay[ol].style.backgroundColor = bgColors[index].altHex;
+  }
   // adds one to index
   index = (index + 1) % bgColors.length;
 }
 
-// EVENT
-button.addEventListener('click', changeBg);
+// EVENTS
+toggleColors[0].addEventListener('click', changeBg);
+toggleColors[1].addEventListener('click', changeBg);
 
 
 // end program

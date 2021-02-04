@@ -7,21 +7,23 @@
 ===============================================
 */
 
-// variables - text to "typed" onto the page
+// variables - text to be "typed" onto the page
 const intro = `Hi, my name is Mark Watson`;
 const title = `I'm a Web Developer`;
 const openThis = 'open section/about.html';
 const load = '...'
+const changeThemeText = 'Click here to swap themes!'
 
 // variables - letter retrievers for above variables
 let i = 0;
 let t = 0;
 let o = 0;
 let l = 0;
+let c = 0;
 
-// variable - speed that letters are typed
+// variable - default speed that letters are "typed"
 const speed = 80;
-// variable - selects all <span>'s with type-block class
+// variable - selector for all elements with type-block class
 const typeBlock = document.querySelectorAll('.type-block');
 
 
@@ -93,6 +95,22 @@ function loading() {
   }
   else {
       document.getElementById('load').innerHTML = load;
+  }
+}
+
+/**
+* Params: n/a
+* Response: removes .hide CSS class
+* Description: makes element appear on page
+*/
+function typeThemeText() {
+  if (c < changeThemeText.length) {
+    document.getElementById('change-theme-text').innerHTML += changeThemeText.charAt(c);
+    c++;
+    setTimeout(typeThemeText, speed);
+  }
+  else {
+    document.getElementById('change-theme-text').innerHTML = changeThemeText;
   }
 }
 
@@ -183,7 +201,9 @@ function hideOpenText() {
 * Description: scrolls to #about section on page
 */
 function openAbout(){
-  window.location.hash = '#about';
+  if (window.scrollY < 500) {
+    window.location.hash = '#about';
+  }
 }
 
 // start script
@@ -205,6 +225,7 @@ setTimeout(hideLoading, 10750);
 setTimeout(openAbout, 11000);
 setTimeout(hideOpenText, 11250);
 setTimeout(showBlock3, 11250);
+setTimeout(typeThemeText, 13000);
 
 
 // end script

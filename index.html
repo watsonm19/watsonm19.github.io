@@ -4,27 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mark Watson's Portfolio</title>
-  <!-- Bootstrap 4 CDN / HOSTED -->
+  <!-- HOSTED -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <!-- LOCAL -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Welcome Section -->
   <section id="welcome">
     <p id="theme-credit">Colors inspired by <span id="creator">Material Theme</span>'s "<span id="theme-name">Ocean High Contrast</span>" Theme</p>
-    <span id="toggle-colors" class="badge badge-dark">Change Theme</span>
-    <div id="cli" class="container p-5">
+    <span id="toggle-btn" class="badge badge-dark toggle-colors">Change Theme</span>
+    <div id="cli" class="container p-5 toggle-colors">
       <h1>markwatsonjr@portfolio ~ % <span id="intro"></span><span class="type-block"><</span></h1>
       <h1 id="type2" class="pt-1 hide">markwatsonjr@portfolio ~ % <span id="title"></span><span class="type-block"><</span></h1>
-      <h1 id="type3" class="pt-1 hide">markwatsonjr@portfolio ~ % <span id="open-this"></span><span class="type-block"><</span></h1>
+      <h1 id="type3" class="pt-1 hide">markwatsonjr@portfolio ~ % <span id="open-this"></span><span id="change-theme-text"></span><span class="type-block"><</span></h1>
       <h1 id="loading" class="hide pt-2">Loading<span id="load"></span></h1>
     </div>
     <span id="view-work">view my work</span>
     <a href="#projects"><span id="down">&#8595;</span></a>
   </section>
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <!-- Nav -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,7 +50,7 @@
     </div>
   </nav>
 
-
+  <!-- About Section -->
   <section id="about" class="mt-5">
     <h2 class="text-center p-5">ABOUT</h2>
     <div class="container-fluid p-5">
@@ -54,12 +58,12 @@
         <figure class="col text-center">
           <img id="profile-img" src="imgs/mjw-profile-min.jpg" alt="">
         </figure>
-        <div class="col" style="min-width: 400px;">
+        <div id="about-me-text" class="col">
           <div class="container">
-            <h5>Title here</h5>
-            <p> Quisque nisl ex, feugiat quis odio eget, semper mollis diam. Morbi ac dignissim lorem, vitae faucibus nunc. Fusce erat urna, consequat non consequat ut, pulvinar quis ligula. In luctus dictum nisl, at finibus felis. Morbi scelerisque leo augue, cursus facilisis augue fermentum sed. Nam eu tortor sed diam tincidunt rhoncus. Nunc eget scelerisque justo, pulvinar mattis nibh. Nulla posuere neque et nibh mollis lobortis. Curabitur tincidunt mollis elit, ac sagittis lacus pretium sit amet. Nulla dapibus, justo in pretium tristique, eros sapien commodo sem.</p>
-            <p>Donec vitae molestie arcu. Donec maximus lorem ac lacus sagittis convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eget pulvinar mi. Donec non ornare velit, eget egestas neque. Pellentesque mattis accumsan diam, eu eleifend erat efficitur sit amet. Quisque non nisl id urna euismod lobortis ut id urna. Aenean blandit risus sit amet tortor sagittis rhoncus. Quisque a viverra arcu, at pretium purus. Aliquam euismod facilisis cursus. Etiam id rhoncus odio. Suspendisse potenti. Quisque id erat justo. Integer porta fermentum tincidunt.</p>
-            <span>View my <a href="#" class="card-link">resume</a></span>
+            <h5>"I want to make things that make an impact."</h5>
+            <p>When I first started my coding journey, there was an instance where I got to print and see my very first "output" on my own laptop screen and from that moment, I knew I was going to be hooked. I couldn't believe how easy and straightforward it felt while I was putting together my first simple web page using just HTML and CSS. It's an amazing feeling to know that you can create so many useful things just by having a vision and knowing code to make that vision come to life. All I wanted to do from that moment on was to learn more and keep learning. Working on software projects has never felt like a "a job" for me. It started as a fun hobby and has now become a real passion for me. I'm excited to keep moving forward, learning more every day and building a lifelong career in this field!</p>
+            <p>In my first career, I was a personal trainer and a coach for people of all ages ranging from kids to elderly adults. I loved sports growing up and I was able to play soccer in college which was always a dream of mine. So, health, wellness and fitness will always be an important aspect of my life. I've trained and gotten to know athletes, artists, CEO's, small business owners, students, teachers, mothers, fathers, grandparents - so many people from so many different walks of life. I learned something valuable from every single one of them! That continues to be my goal now - to continue learning and evolving in the field of software development.</p>
+            <span>View my <a href="https://drive.google.com/file/d/1pGcmP_Al5Hd09IZJKUQ7S56wyLTYkEaG/view?usp=sharing" target="_blank" class="card-link">resume</a></span>
           </div>
         </div>
       </div>
@@ -74,7 +78,7 @@
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Graduated: Spring 2019</li>
-              <li class="list-group-item">Associate of Science, GPA: 3.72</li>
+              <li class="list-group-item">Associate of Science</li>
             </ul>
           </div>
           <br>
@@ -120,36 +124,78 @@
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="mt-5">
     <h2 class="text-center p-5">PROJECTS</h2>
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
+        <!-- bioSite -->
         <div class="carousel-item active">
           <div class="carousel-caption">
-            <a href="https://watsonm19.github.io/bioSite/main/index.html" target="_blank"><h3>bioSite</h3></a>
-            <p>Morbi ipsum lorem, eleifend eget nulla ut, aliquet vehicula velit.</p>
+            <a href="https://watsonm19.github.io/bioSite/main/index.html" target="_blank">
+              <h3>bioSite</h3>
+              <div class="img-container m-2">
+                <img src="imgs/bioSite-image.png" alt="bioSite Image">
+                <div class="overlay">
+                  <span>HTML, CSS, Wireframe Sketching</span>
+                </div>
+              </div>
+            </a>
+            <p>A Wikipedia-inspired biography web page for Kristen Crawford.</p>
             <a href="https://drive.google.com/file/d/1PXHl_Y03_a7K9WBx7wRzapR9bLqUFd6j/view?usp=sharing" target="_blank">bioSite prototype</a>
           </div>
         </div>
+        <!-- WEB 231 Repo-->
         <div class="carousel-item">
           <div class="carousel-caption">
-            <a href="https://github.com/watsonm19/web-231" target="_blank"><h3>Enterprise JavaScript Repository</h3></a>
-            <p>Bellevue University, WEB-231, GitHub</p>
+            <a href="https://github.com/watsonm19/web-231" target="_blank">
+              <h3>Enterprise JavaScript Repository</h3>
+              <div class="img-container m-2">
+                <img src="imgs/js-image.png" alt="JavaScript Image from https://codeburst.io/">
+                <div class="overlay">
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+            <p>Bellevue University, WEB-231, GitHub Repo</p>
           </div>
         </div>
+        <!-- Portfolio Wireframes -->
         <div class="carousel-item">
           <div class="carousel-caption">
-            <a href="https://drive.google.com/file/d/1JIzXFHmcaZElPifsR_LHJly49hwzulse/view?usp=sharing" target="_blank"><h3>Mark's Personal Portfolio Protype</h3></a>
-            <p>The wireframes for this page! Made with NinjaMock.</p>
+            <a href="https://drive.google.com/file/d/1JIzXFHmcaZElPifsR_LHJly49hwzulse/view?usp=sharing" target="_blank">
+              <h3>Mark's Personal Portfolio Prototype</h3>
+              <div class="img-container mt-2">
+                <img src="imgs/wireframe-img.jpg" alt="Wireframe Photo on Unsplash"">
+                <div class="overlay">
+                  <span>
+                    Wireframing Software<br>
+                    HTML, CSS, JavaScript, Bootstrap
+                  </span>
+                </div>
+              </div>
+            </a>
+            <figcaption class="img-cred mb-2"><span>Photo by <a href="https://unsplash.com/@visualdesign_inspiration?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Visual Design</a> on <a href="https://unsplash.com/s/photos/wireframe?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></figcaption>
+            <p>The wireframes for this portfolio page! Made with NinjaMock.</p>
           </div>
         </div>
+        <!-- WEB 330 Repo -->
         <div class="carousel-item">
           <div class="carousel-caption">
-            <a href="https://github.com/watsonm19/web-330" target="_blank"><h3>Enterprise JavaScript II Repository</h3></a>
-            <p>Bellevue University, WEB-330, GitHub</p>
+            <a href="https://github.com/watsonm19/web-330" target="_blank">
+              <h3>Enterprise JavaScript II Repository</h3>
+              <div class="img-container m-2">
+                <img src="imgs/js-image.png" alt="JavaScript image from https://codeburst.io/">
+                <div class="overlay">
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+            <p>Bellevue University, WEB-330, GitHub Repo</p>
           </div>
         </div>
       </div>
+      <!-- Carousal Controls -->
       <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -161,30 +207,39 @@
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="mt-5">
     <h2 class="text-center p-5">CONTACT</h2>
+    <div class="text-center mb-5">
+      <p>Let's get to work...</p>
+      <p>I would love to join your team!</p>
+    </div>
     <div class="container">
-      <form action="">
+      <form action="mailto:watsonpt7@gmail.com" method="POST" enctype="multipart/form-data" name="email-form">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name">
+          <input type="text" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="3"></textarea>
+          <textarea class="form-control" id="message" name="message" rows="4"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <a href="mailto:watsonpt7@gmail.com">Click here if not able to submit</a>
+        </div>
       </form>
     </div>
   </section>
 
-  <hr class="mt-5">
+  <hr class="mt-5"> <!-- horizontal line -->
 
-  <footer class="p-5">
+  <!-- Footer -->
+  <footer class="p-4">
     <p class="text-center">Mark Watson's Portfolio | 2021</p>
   </footer>
 
