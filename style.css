@@ -235,7 +235,7 @@ h2, h3, h4, h5, h6 {
     left: 49.9%;
   }
   .skills li {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -245,7 +245,7 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (max-width: 582px) {
+@media screen and (max-width: 619px) {
   #skills-section {
     margin-top: 30px;
   }
