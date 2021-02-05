@@ -28,12 +28,12 @@ h2, h3, h4, h5, h6 {
   background: #0F111A;
 }
 
-.nav-link {
+#nav-main .nav-link {
   color: #D3D3D3;
   font-weight: 600;
 }
 
-.nav-link:hover {
+#nav-main .nav-link:hover {
   color: #F8F7F9;
   font-weight: 700;
 }
