@@ -18,6 +18,7 @@ const badges = document.querySelectorAll('.badge-dark');
 const creator = document.getElementById('creator');
 const theme = document.getElementById('theme-name');
 const navbar = document.querySelector('.navbar');
+const navHamburger = document.querySelector('.navbar-toggler')
 const projects = document.getElementById('projects');
 const overlay = document.querySelectorAll('.overlay')
 const toggleColors = document.querySelectorAll('.toggle-colors');
@@ -74,6 +75,7 @@ function changeBg() {
   cli.style.backgroundColor = bgColors[index].altHex;
   projects.style.backgroundColor = bgColors[index].hex;
   navbar.style.backgroundColor = bgColors[index].altHex;
+  navHamburger.style.backgroundColor = bgColors[index].hex;
   // changes text on page to give credit for the current theme
   creator.innerText = bgColors[index].inspiredBy;
   theme.innerText = bgColors[index].name

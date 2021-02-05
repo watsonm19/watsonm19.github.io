@@ -114,7 +114,7 @@ function typeSwapTheme() {
 * Description: makes element appear on page
 */
 function showType2() {
-  document.getElementById('type2').classList.remove("hide");
+  document.getElementById('type2').classList.remove('hide');
 }
 
 /**
@@ -123,7 +123,7 @@ function showType2() {
 * Description: makes element appear on page
 */
 function showType3() {
-  document.getElementById('type3').classList.remove("hide");
+  document.getElementById('type3').classList.remove('hide');
 }
 
 /**
@@ -132,7 +132,7 @@ function showType3() {
 * Description: makes element appear on page
 */
 function showLoading() {
-  document.getElementById('loading').classList.remove("hide");
+  document.getElementById('loading').classList.remove('hide');
 }
 
 /**
@@ -141,7 +141,7 @@ function showLoading() {
 * Description: hides "typing-block" on page
 */
 function hideBlock1() {
-  typeBlock[0].classList.add("hide");
+  typeBlock[0].classList.add('hide');
 }
 
 /**
@@ -150,7 +150,7 @@ function hideBlock1() {
 * Description: hides "typing-block" on page
 */
 function hideBlock2() {
-  typeBlock[1].classList.add("hide");
+  typeBlock[1].classList.add('hide');
 }
 
 /**
@@ -159,7 +159,7 @@ function hideBlock2() {
 * Description: hides "typing-block" on page
 */
 function hideBlock3() {
-  typeBlock[2].classList.add("hide");
+  typeBlock[2].classList.add('hide');
 }
 
 /**
@@ -168,7 +168,7 @@ function hideBlock3() {
 * Description: hides "typing-block" on page
 */
 function showBlock3() {
-  typeBlock[2].classList.remove("hide");
+  typeBlock[2].classList.remove('hide');
 }
 
 /**
@@ -177,13 +177,13 @@ function showBlock3() {
 * Description: hides "loading" element on page
 */
 function hideLoading() {
-  document.getElementById('loading').classList.add("hide");
+  document.getElementById('loading').classList.add('hide');
 }
 
 /**
 * Params: n/a
 * Response: change element text to empty string
-* Description: hides "open-this" element on page
+* Description: erases content from #open-this element on page
 */
 function hideOpenText() {
   document.getElementById('open-this').innerHTML = '';
