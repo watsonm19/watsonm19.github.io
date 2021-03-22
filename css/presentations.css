@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: ghostwhite;
+}
+
+/* PRESENTATIONS STYLES */
+.title-presentations h1 {
+  font-size: 3em;
+}
+
+.presentations, .card-body {
+  background: #090B10;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.presentations h2 {
+  color: #F8F7F9;
+  text-decoration: underline;
+}
+
+video {
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 1050px) {
+  video {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  video {
+    max-width: 400px;
+  }
+}

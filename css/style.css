@@ -168,6 +168,10 @@ h2, h3, h4, h5, h6 {
   color: #F8F7F9;
 }
 
+#projects a {
+  color: aqua;
+}
+
 .carousel {
   margin-top: 50px;
 }
@@ -232,6 +236,10 @@ h2, h3, h4, h5, h6 {
 
 #diagrams h2 {
   color: #F8F7F9;
+}
+
+#diagrams a {
+  color: aqua;
 }
 
 #diagrams-inner {
