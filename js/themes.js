@@ -15,6 +15,7 @@
 const welcome = document.getElementById('welcome');
 const cli = document.getElementById('cli');
 const badges = document.querySelectorAll('.badge-dark');
+const cards = document.querySelectorAll('.card-dark');
 const creator = document.getElementById('creator');
 const theme = document.getElementById('theme-name');
 const navbar = document.querySelector('.navbar');
@@ -83,9 +84,13 @@ function changeBg() {
   for (b = 0; b < badges.length; b++) {
     badges[b].style.backgroundColor = bgColors[index].altHex;
   }
+  // selects and changes all card background colors
+  for (c = 0; c < cards.length; c++) {
+    cards[c].style.backgroundColor = bgColors[index].altHex;
+  }
   // selects and changes all overlay background colors
-  for (ol = 0; ol < overlay.length; ol++) {
-    overlay[ol].style.backgroundColor = bgColors[index].altHex;
+  for (o = 0; o < overlay.length; o++) {
+    overlay[o].style.backgroundColor = bgColors[index].altHex;
   }
   // adds one to index
   index = (index + 1) % bgColors.length;
