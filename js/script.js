@@ -219,7 +219,7 @@ setTimeout(loading, 9000);
 setTimeout(hideLoading, 10750);
 setTimeout(openAbout, 11000);
 setTimeout(hideOpenText, 11250);
-setTimeout(showBlock3, 11250);
+setTimeout(showBlock3, 11500);
 setTimeout(typeSwapTheme, 13000);
 
 
