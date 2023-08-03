@@ -3,13 +3,14 @@
 ; Title: Mark Watson's Portfolio Script
 ; Author: Mark Watson
 ; Date: 25 January 2021
+; Last Modified: 3 August 2023
 ; Description: This program creates a scripted CLI-like typing effect on Mark's Portfolio page.
 ===============================================
 */
 
 // variables - text to be "typed" onto the page
 const intro = `Hi, my name is Mark Watson`;
-const title = `I'm a Web Developer`;
+const title = `I'm a software engineer`;
 const openThis = 'open section/about.html';
 const load = '...'
 const swapThemeText = 'Click here to swap themes!'
