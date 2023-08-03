@@ -189,18 +189,18 @@ function openAbout() {
 // FUNCTION CALLS & OUTPUTS
 // On timer from window load
 setTimeout(typeIntro, 500);
-setTimeout(hideBlock1, 3000)
-setTimeout(showType2, 3000);
-setTimeout(typeTitle, 3500);
-setTimeout(hideBlock2, 5500)
-setTimeout(showType3, 5500);
-setTimeout(typeOpenThis, 6000);
-setTimeout(hideBlock3, 8500)
-setTimeout(showLoading, 8500);
-setTimeout(loading, 9000);
-setTimeout(hideLoading, 10750);
-setTimeout(hideOpenText, 10800);
-setTimeout(showBlock3, 10900);
-setTimeout(openAbout, 11000);
+setTimeout(hideBlock1, 3100)
+setTimeout(showType2, 3200);
+setTimeout(typeTitle, 3700);
+setTimeout(hideBlock2, 6200)
+setTimeout(showType3, 6300);
+setTimeout(typeOpenThis, 6800);
+setTimeout(hideBlock3, 9300)
+setTimeout(showLoading, 9400);
+setTimeout(loading, 9700);
+setTimeout(hideLoading, 11350);
+setTimeout(hideOpenText, 11400);
+setTimeout(showBlock3, 11500);
+setTimeout(openAbout, 12000);
 
 // end script
