@@ -217,10 +217,8 @@ setTimeout(hideBlock3, 8500)
 setTimeout(showLoading, 8500);
 setTimeout(loading, 9000);
 setTimeout(hideLoading, 10750);
-setTimeout(hideOpenText, 10900);
+setTimeout(hideOpenText, 10800);
+setTimeout(showBlock3, 10900);
 setTimeout(openAbout, 11000);
-setTimeout(showBlock3, 11500);
-setTimeout(typeSwapTheme, 13000);
-
 
 // end script
