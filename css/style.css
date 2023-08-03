@@ -54,10 +54,11 @@ h2, h3, h4, h5, h6 {
 
 #toggle-btn {
   background: #0F111A;
-  color: darkgray;
+  color: rgba(white, 0.85);
   top: 0;
   right: 0;
   position: absolute;
+  padding: 7px;
 }
 
 #toggle-btn:hover {
