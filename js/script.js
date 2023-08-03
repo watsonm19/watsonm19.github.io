@@ -196,11 +196,11 @@ setTimeout(hideBlock2, 6200)
 setTimeout(showType3, 6300);
 setTimeout(typeOpenThis, 6800);
 setTimeout(hideBlock3, 9300)
-setTimeout(showLoading, 9400);
-setTimeout(loading, 9700);
-setTimeout(hideLoading, 11350);
-setTimeout(hideOpenText, 11400);
-setTimeout(showBlock3, 11500);
-setTimeout(openAbout, 12000);
+setTimeout(showLoading, 9600);
+setTimeout(loading, 10000);
+setTimeout(hideLoading, 11650);
+setTimeout(hideOpenText, 11700);
+setTimeout(showBlock3, 11800);
+setTimeout(openAbout, 12100);
 
 // end script
