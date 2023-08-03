@@ -13,14 +13,12 @@ const intro = `Hi, my name is Mark Watson`;
 const title = `I'm a software engineer`;
 const openThis = 'open section/about.html';
 const load = '...'
-const swapThemeText = 'Click here to swap themes!'
 
 // variables - letter retrievers for above variables
 let i = 0;
 let t = 0;
 let o = 0;
 let l = 0;
-let c = 0;
 
 // variable - default speed that letters are "typed"
 const speed = 80;
@@ -90,22 +88,6 @@ function loading() {
   }
   else {
       document.getElementById('load').innerHTML = load;
-  }
-}
-
-/**
-* Params: n/a
-* Response: removes .hide CSS class
-* Description: makes element appear on page
-*/
-function typeSwapTheme() {
-  if (c < swapThemeText.length) {
-    document.getElementById('swap-theme-text').innerHTML += swapThemeText.charAt(c);
-    c++;
-    setTimeout(typeSwapTheme, speed);
-  }
-  else {
-    document.getElementById('swap-theme-text').innerHTML = swapThemeText;
   }
 }
 
@@ -195,7 +177,7 @@ function hideOpenText() {
 * Response: scroll to section
 * Description: scrolls to #about section on page
 */
-function openAbout(){
+function openAbout() {
   if (window.scrollY < 500) {
     window.location.hash = '#about';
   }
