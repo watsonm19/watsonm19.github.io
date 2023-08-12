@@ -49,6 +49,7 @@ h2, h3, h4, h5, h6 {
   background: #090B10;
   color: #F8F7F9;
   padding-top: 150px;
+  padding-bottom: 150px;
   font-family: "Menlo", monospace, serif;
 }
 
@@ -69,7 +70,7 @@ h2, h3, h4, h5, h6 {
 #theme-credit {
   color: gray;
   bottom: 0;
-  left: 0;
+  left: 3px;
   position: absolute;
   font-size: 10px;
 }
@@ -81,7 +82,7 @@ h2, h3, h4, h5, h6 {
 #cli {
   background: #0F111A;
   border-radius: 10px;
-  height: 400px;
+  height: 100%;
 }
 
 #welcome h1 {
@@ -283,6 +284,12 @@ h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 845px) {
+  #theme-credit,
+  #creator,
+  #theme-name {
+    font-size: 8px;
+  }
+
   #profile-img {
     margin-bottom: 50px;
   }
@@ -305,6 +312,12 @@ h2, h3, h4, h5, h6 {
 
   #welcome h1 span {
     font-size: 14px;
+  }
+
+  #theme-credit,
+  #creator,
+  #theme-name {
+    font-size: 5px;
   }
 
   #view-work {
