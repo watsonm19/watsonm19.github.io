@@ -157,6 +157,14 @@ h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.card-dark a {
+  color: #fff;
+}
+
+.card-dark a:hover {
+  text-decoration: none;
+}
+
 .list-style-none{
   list-style-type: none;
 }
