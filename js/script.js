@@ -10,7 +10,7 @@
 
 // variables - text to be "typed" onto the page
 const intro = `Hi, my name is Mark Watson`;
-const title = `I'm a software engineer`;
+const title = `I'm a full-stack developer`;
 const openThis = 'open section/about.html';
 const load = '...'
 
