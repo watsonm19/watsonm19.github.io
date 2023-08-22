@@ -97,6 +97,7 @@ h2, h3, h4, h5, h6 {
   background: #F8F7F9;
 }
 
+/* "hide" class for JS toggling */
 .hide {
   visibility: hidden;
 }
@@ -330,6 +331,7 @@ h2, h3, h4, h5, h6 {
   #creator,
   #theme-name {
     font-size: 5px;
+    visibility: hidden;
   }
 
   #view-work {
