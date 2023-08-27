@@ -192,15 +192,15 @@ setTimeout(typeIntro, 500);
 setTimeout(hideBlock1, 3100)
 setTimeout(showType2, 3200);
 setTimeout(typeTitle, 3700);
-setTimeout(hideBlock2, 6200)
-setTimeout(showType3, 6300);
-setTimeout(typeOpenThis, 6800);
-setTimeout(hideBlock3, 9300)
-setTimeout(showLoading, 9600);
-setTimeout(loading, 10000);
-setTimeout(hideLoading, 11650);
-setTimeout(hideOpenText, 11700);
-setTimeout(showBlock3, 11800);
-setTimeout(openAbout, 12100);
+setTimeout(hideBlock2, 6400)
+setTimeout(showType3, 6500);
+setTimeout(typeOpenThis, 7000);
+setTimeout(hideBlock3, 9500)
+setTimeout(showLoading, 9800);
+setTimeout(loading, 10200);
+setTimeout(hideLoading, 11850);
+setTimeout(hideOpenText, 11900);
+setTimeout(showBlock3, 12000);
+setTimeout(openAbout, 12300);
 
 // end script
