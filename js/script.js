@@ -64,14 +64,14 @@ function typeTitle() {
 * Response: adds characters from openThis variable to HTML at rate of speed
 * Description: creates typing effect on page
 */
-function typeOpenThis() {
+function typeOpenAbout() {
   if (o < openThis.length) {
-      document.getElementById('open-this').innerHTML += openThis.charAt(o);
+      document.getElementById('open-about').innerHTML += openThis.charAt(o);
       o++;
-      setTimeout(typeOpenThis, speed);
+      setTimeout(typeOpenAbout, speed);
   }
   else {
-      document.getElementById('open-this').innerHTML = openThis;
+      document.getElementById('open-about').innerHTML = openThis;
   }
 }
 
@@ -96,8 +96,8 @@ function loading() {
 * Response: removes .hide CSS class
 * Description: makes element appear on page
 */
-function showType2() {
-  document.getElementById('type2').classList.remove('hide');
+function showLine2() {
+  document.getElementById('line-2').classList.remove('hide');
 }
 
 /**
@@ -105,8 +105,8 @@ function showType2() {
 * Response: removes .hide CSS class
 * Description: makes element appear on page
 */
-function showType3() {
-  document.getElementById('type3').classList.remove('hide');
+function showLine3() {
+  document.getElementById('line-3').classList.remove('hide');
 }
 
 /**
@@ -166,10 +166,10 @@ function hideLoading() {
 /**
 * Params: n/a
 * Response: change element text to empty string
-* Description: erases content from #open-this element on page
+* Description: erases content from #open-about element on page
 */
-function hideOpenText() {
-  document.getElementById('open-this').innerHTML = '';
+function hideOpenAbout() {
+  document.getElementById('open-about').innerHTML = '';
 }
 
 /**
@@ -190,16 +190,16 @@ function openAbout() {
 // On timer from window load
 setTimeout(typeIntro, 500);
 setTimeout(hideBlock1, 3200)
-setTimeout(showType2, 3300);
+setTimeout(showLine2, 3300);
 setTimeout(typeTitle, 3800);
 setTimeout(hideBlock2, 6500)
-setTimeout(showType3, 6600);
-setTimeout(typeOpenThis, 7100);
+setTimeout(showLine3, 6600);
+setTimeout(typeOpenAbout, 7100);
 setTimeout(hideBlock3, 9600)
 setTimeout(showLoading, 9900);
 setTimeout(loading, 10300);
 setTimeout(hideLoading, 11950);
-setTimeout(hideOpenText, 12000);
+setTimeout(hideOpenAbout, 12000);
 setTimeout(showBlock3, 12100);
 setTimeout(openAbout, 12400);
 
