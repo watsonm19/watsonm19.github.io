@@ -8,21 +8,23 @@
 ===============================================
 */
 
-// variables - text to be "typed" onto the page
-const intro = `Hi, my name is Mark Watson`;
-const title = `I'm a full-stack developer`;
-const openThis = 'open section/about.html';
-const load = '...'
+// text to be "typed" onto the page
+const texts = [
+  `Hi, my name is Mark Watson`,
+  `I'm a full-stack developer`,
+  'open section/about.html',
+  '...'
+]
 
-// variables - letter retrievers for above variables
+// letter retrievers for above variables
 let i = 0;
 let t = 0;
 let o = 0;
 let l = 0;
 
-// variable - default speed that letters are "typed"
+// default speed that letters are "typed"
 const speed = 80;
-// variable - selector for all elements with type-block class
+// selector for all elements with type-block class
 const typeBlock = document.querySelectorAll('.type-block');
 
 // FUNCTION DECLARATIONS
@@ -33,13 +35,13 @@ const typeBlock = document.querySelectorAll('.type-block');
 * Description: creates typing effect on page
 */
 function typeIntro() {
-  if (i < intro.length) {
-      document.getElementById('intro').innerHTML += intro.charAt(i);
+  if (i < texts[0].length) {
+      document.getElementById('intro-text').innerHTML += texts[0].charAt(i);
       i++;
       setTimeout(typeIntro, speed);
   }
   else {
-      document.getElementById('intro').innerHTML = intro;
+      document.getElementById('intro-text').innerHTML = texts[0];
   }
 }
 
@@ -49,13 +51,13 @@ function typeIntro() {
 * Description: creates typing effect on page
 */
 function typeTitle() {
-    if (t < title.length) {
-        document.getElementById('title').innerHTML += title.charAt(t);
+    if (t < texts[1].length) {
+        document.getElementById('career-title-text').innerHTML += texts[1].charAt(t);
         t++;
         setTimeout(typeTitle, speed);
     }
     else {
-        document.getElementById('title').innerHTML = title;
+        document.getElementById('career-title-text').innerHTML = texts[1];
     }
 }
 
@@ -65,13 +67,13 @@ function typeTitle() {
 * Description: creates typing effect on page
 */
 function typeOpenAbout() {
-  if (o < openThis.length) {
-      document.getElementById('open-about').innerHTML += openThis.charAt(o);
+  if (o < texts[2].length) {
+      document.getElementById('open-about-text').innerHTML += texts[2].charAt(o);
       o++;
       setTimeout(typeOpenAbout, speed);
   }
   else {
-      document.getElementById('open-about').innerHTML = openThis;
+      document.getElementById('open-about-text').innerHTML = texts[2];
   }
 }
 
@@ -81,13 +83,13 @@ function typeOpenAbout() {
 * Description: creates loading effect on page
 */
 function loading() {
-  if (l < load.length) {
-      document.getElementById('load').innerHTML += load.charAt(l);
+  if (l < texts[3].length) {
+      document.getElementById('load-text').innerHTML += texts[3].charAt(l);
       l++;
       setTimeout(loading, 500);
   }
   else {
-      document.getElementById('load').innerHTML = load;
+      document.getElementById('load-text').innerHTML = texts[3];
   }
 }
 
