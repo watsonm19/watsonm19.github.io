@@ -16,7 +16,7 @@ const texts = [
   '...'
 ]
 
-// letter retrievers for above variables
+// letter retrievers for texts
 let i = 0;
 let t = 0;
 let o = 0;
@@ -24,6 +24,7 @@ let l = 0;
 
 // default speed that letters are "typed"
 const speed = 80;
+
 // selector for all elements with type-block class
 const typeBlock = document.querySelectorAll('.type-block');
 
@@ -36,12 +37,12 @@ const typeBlock = document.querySelectorAll('.type-block');
 */
 function typeIntro() {
   if (i < texts[0].length) {
-      document.getElementById('intro-text').innerHTML += texts[0].charAt(i);
-      i++;
-      setTimeout(typeIntro, speed);
+    document.getElementById('intro-text').innerHTML += texts[0].charAt(i);
+    i++;
+    setTimeout(typeIntro, speed);
   }
   else {
-      document.getElementById('intro-text').innerHTML = texts[0];
+    document.getElementById('intro-text').innerHTML = texts[0];
   }
 }
 
@@ -51,14 +52,14 @@ function typeIntro() {
 * Description: creates typing effect on page
 */
 function typeTitle() {
-    if (t < texts[1].length) {
-        document.getElementById('career-title-text').innerHTML += texts[1].charAt(t);
-        t++;
-        setTimeout(typeTitle, speed);
-    }
-    else {
-        document.getElementById('career-title-text').innerHTML = texts[1];
-    }
+  if (t < texts[1].length) {
+    document.getElementById('career-title-text').innerHTML += texts[1].charAt(t);
+    t++;
+    setTimeout(typeTitle, speed);
+  }
+  else {
+    document.getElementById('career-title-text').innerHTML = texts[1];
+  }
 }
 
 /**
@@ -68,12 +69,12 @@ function typeTitle() {
 */
 function typeOpenAbout() {
   if (o < texts[2].length) {
-      document.getElementById('open-about-text').innerHTML += texts[2].charAt(o);
-      o++;
-      setTimeout(typeOpenAbout, speed);
+    document.getElementById('open-about-text').innerHTML += texts[2].charAt(o);
+    o++;
+    setTimeout(typeOpenAbout, speed);
   }
   else {
-      document.getElementById('open-about-text').innerHTML = texts[2];
+    document.getElementById('open-about-text').innerHTML = texts[2];
   }
 }
 
@@ -84,12 +85,12 @@ function typeOpenAbout() {
 */
 function loading() {
   if (l < texts[3].length) {
-      document.getElementById('load-text').innerHTML += texts[3].charAt(l);
-      l++;
-      setTimeout(loading, 500);
+    document.getElementById('load-text').innerHTML += texts[3].charAt(l);
+    l++;
+    setTimeout(loading, 500);
   }
   else {
-      document.getElementById('load-text').innerHTML = texts[3];
+    document.getElementById('load-text').innerHTML = texts[3];
   }
 }
 
